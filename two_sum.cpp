@@ -15,13 +15,15 @@ class Solution {
                 answer[0]=-1;
                 answer[1]=-1;
                 int i,j;
-        for(i=0;i<nums.size();i++){
-                        temp=target-nums[i];
-                        for(j=i+1;j<nums.size();j++)
-            if(nums[j]==temp){
-                                    answer[0]=i;
-                                    answer[1]=j;
-                                     return answer;
+        for(i=0;i<nums.size();i++)
+        {
+            temp=target-nums[i];
+            for(j=i+1;j<nums.size();j++)
+            if(nums[j]==temp)
+            {
+                answer[0]=i;
+                answer[1]=j;
+                return answer;
                                 
             }
                     
